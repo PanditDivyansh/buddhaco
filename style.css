@@ -1,0 +1,552 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.maxwidth{
+    max-width: 13000px;
+    padding: 0 50px;
+    margin: auto;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 30px;
+   /* background: crimson; */
+    font-family: 'ubuntu-bold' , 'poppins' , sans-serif ;
+    
+}
+.navbar.sticky {
+    padding: 15px 0;
+    background-color: crimson !important;
+    transition: background-color 0.4s linear;
+  }
+  .navbar.sticky .logo a span{
+      color: white;
+      transition: background-color 0.4s linear;
+  }
+.navbar .logo a{
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+}
+.navbar .logo a span{
+    color: crimson;
+}
+.navbar .maxwidth{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu  li a{
+    color: rgb(255, 255, 255);
+    font-size:15px;
+    font-weight: 400;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+}
+.navbar .menu  li a:hover{
+    color: crimson;
+}
+.navbar.sticky .menu  li a:hover {
+color: black;
+}
+.menu-btn{
+    color: white;
+    font-size: 17px ;
+    cursor: pointer;
+    display: none;
+}
+.home{
+    display: flex;
+    background: url("images/1358218.jpg") no-repeat center;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    min-height: 500px;
+    font-family: 'ubuntu-bold' , 'poppins' , sans-serif ;
+}
+.home .maxwidth{
+    margin: auto 0 auto 40px;
+}
+.home .homecontent .text1{
+    font-size: 20px;
+    
+}
+.home .homecontent .text2{
+    font-size: 45px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .homecontent .text3{
+    font-size: 27px;
+    margin: 5px 0;
+}
+.home .homecontent .text3 span{
+    color: crimson;
+    font-weight: 500;
+}
+.home .homecontent a{
+    display: inline-block;
+    background: crimson;
+    color: white;
+    font-size: 20px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 2px solid crimson;
+    transition: all 0.4s ease;
+}
+.home .homecontent a:hover{
+    color: crimson;
+    background: none;
+}
+section{
+    padding: 70px;
+}
+.About , .section , .gallery , .perks .contact{
+    font-family: 'poppins' , sans-serif;
+}
+section .title{
+    position: relative;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 750;
+    margin-bottom: 60px;
+    padding-bottom: 15px;
+    font-family: 'ubuntu-bold' , sans-serif;
+
+}
+section .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 150px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+section .title::after{
+    
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    font-size: 15px;
+    color: crimson;
+    padding: 5px;
+    background: rgb(255, 255, 255);
+    transform: translateX(-50%);
+}
+.About .title::after{
+    content: "Who i am";
+}
+.About .Aboutcontent ,.services .servicescontent ,.gallery .gallerycontent ,.perks .perkscontent , .contact .contactcontent{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+}
+.About .Aboutcontent .columnright{
+    position: relative;
+    top: 30px;
+    width: 55%; 
+}
+.About .Aboutcontent .columnright .text{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.About .Aboutcontent .columnright .text span{
+    color: crimson;
+}
+.About .Aboutcontent .columnright p{
+    text-align: justify;
+}
+.About .Aboutcontent .columnright a{
+    display: inline-block;
+    background: crimson;
+    color: white;
+    font-size: 17px;
+    padding: 10px 30px;
+    font-weight: 500;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 2px solid crimson;
+    transition: all 0.4s ease;
+}
+.About .Aboutcontent .columnright a:hover{
+    color: crimson;
+    background: none;
+}
+.About .Aboutcontent .columnleft img{
+    height: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+.services{
+    color: white;
+    background: black;
+}
+.services .title::before{
+    background: white;
+}
+.services .title::after{
+    background: black;
+    content: "What i provide";
+}
+.services .servicescontent .card{
+    width: Calc(33% - 20px);
+    font-family:  'ubuntu-bold' , sans-serif;
+    background: #222;
+    text-align: center;
+    border-radius: 5px;
+    padding: 17px 20px;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+.services .servicescontent .card:hover{
+    background: crimson;
+}
+.services .servicescontent .card i{
+    font: 60px;
+    color: crimson;
+    transition: all 0.4s ease;
+}
+.services .servicescontent .card:hover i{
+     color: white;
+}
+.services .servicescontent .card .text{
+    font-size: 21px;
+    font-weight: 500;
+    margin: 7px 0 5px 0;
+    color:rgb(255, 255, 255);
+}
+.services .servicescontent .card .box{
+    transition: all 0.4s ease;
+}
+.services .servicescontent .card:hover .box{
+    transform: scale(1.05);
+}
+.perks .title::after{
+    content: "achievements";
+    font-size: 13px;
+}
+
+/* hatt pallang ko */
+
+.gallery{
+    color: white;
+    background: #222;
+}
+
+.gallery .title::after{
+    content: "My works";
+    background: #222;
+    font-size: 15px;
+}
+
+
+.gallery .gallerycontent .column1{
+    position: relative;
+    
+    width: 33%;
+    
+}
+.gallery .gallerycontent .column1 video{
+   width: 100%;
+    border: crimson;
+   border-radius: 5px;
+   border-width: 2px;
+}
+.gallery .gallerycontent .column2{
+    position: relative;
+    
+    width: 33%;
+    
+}
+.gallery .gallerycontent .column2 video{
+   width: 100%;
+    border: crimson;
+   border-radius: 5px;
+   border-width: 2px;
+}
+.gallery .gallerycontent .column3{
+    position: relative;
+    width: 33%;
+    
+    
+}
+.gallery .gallerycontent .column3 video{
+    width: 100%;
+    border: crimson;
+   border-radius: 5px;
+   border-width: 2px;
+}
+/*perks*/
+
+.perks .perkscontent .column1{
+    position: relative;
+    width: 20%;
+}
+.perks .perkscontent .column1 img{
+    width: 100%;
+    border-radius: 6px;
+    padding: 5px;
+    border: crimson solid 3px;
+    border-width: 3px;
+}
+.perks .perkscontent .column2{
+    position: relative;
+    width: 20%;
+}
+.perks .perkscontent .column2 img{
+    width: 100%;
+    border-radius: 6px;
+    padding: 5px;
+    border: crimson solid 3px;
+    border-width: 3px;
+}
+.perks .perkscontent .column3{
+    position: relative;
+    width: 20%;
+}
+.perks .perkscontent .column3 img{
+    width: 100%;
+    border-radius: 6px;
+    padding: 5px;
+    border: crimson solid 3px;
+    border-width: 3px;
+}
+.perks .perkscontent .column4{
+    position: relative;
+    width: 20%;
+}
+.perks .perkscontent .column4 img{
+    width: 100%;
+    border-radius: 6px;
+    padding: 5px;
+    border: crimson solid 3px;
+    border-width: 3px;
+
+}
+
+
+/*contact*/
+
+.contact .contactcontent {
+    font-family:  'ubuntu-bold' , sans-serif ;
+}
+
+.contact .title::after{
+    content: "get in touch";
+}
+.contact .contactcontent .column{
+    width: calc(50% - 30px);
+}
+.contact .contactcontent .text{
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+.contact .contactcontent .left p{
+    text-align: justify;
+}
+.contact .contactcontent .left .icons{
+    margin: 10px 0;
+}
+.contact .contactcontent .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .contactcontent .row .info{
+    margin-left: 25px;
+}
+.contact .contactcontent .row i{
+    font-size: 25px;
+    color: crimson;
+}
+.contact .contactcontent .info .head{
+    font-weight: 500;
+}
+.contact .contactcontent .info .subtitle{
+    color: #333;
+}
+.contact .right form .field{
+    display: flex;
+}
+.contact .right form .fields .field{
+    height: 45px;
+    width: 100%;
+}
+.contact .right form .field input{
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    outline: none;
+    padding: 0 13px;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+@media (max-width: 991px){
+    .maxwidth{
+        
+        padding: 0 ;
+       
+    }
+    .navbar .maxwidth{
+        padding: 5px 20px;
+    }
+    .menu-btn{
+        display: block;
+        z-index: 999
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: black;
+        text-align: center;
+        padding-top: 20px;
+        transition: all 0.4s ease;
+    }
+    .navbar .menu.active{
+        left: 0;
+    }
+
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 20px;
+    }
+    .navbar .menu li a:hover{
+        color: crimson;
+    }
+}
+@media(max-width: 991px){
+    .home{
+        display: flex;
+        background: url("images/1358218.jpg") no-repeat center;
+        height: 100vh;
+        background-size: cover;
+        background-attachment: fixed;
+        color: white;
+        min-height: 500px;
+        font-family: 'ubuntu-bold' , 'poppins' , sans-serif ;
+    }
+    .home .maxwidth{
+        margin: auto 0 auto 10px;
+    }
+    .home .homecontent .text1{
+        font-size: 15px;
+        
+    }
+    .home .homecontent .text2{
+        font-size: 40px;
+        font-weight: 600;
+        margin-left: -3px;
+    }
+    .home .homecontent .text3{
+        font-size: 22px;
+        margin: 3px 0;
+    }
+    .home .homecontent .text3 span{
+        color: crimson;
+        font-weight: 500;
+    }
+    .home .homecontent a{
+        display: inline-block;
+        background: crimson;
+        color: white;
+        font-size: 15px;
+        padding: 12px 30px;
+        margin-top: 20px;
+        border-radius: 5px;
+        border: 2px solid crimson;
+        transition: all 0.4s ease;
+    }
+    .About .Aboutcontent .column{
+        width: 50%;
+    }
+    .About .Aboutcontent .columnleft img{
+        height: 300px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    .maxwidth{
+        max-width: 700px;
+    }
+    .About .Aboutcontent .columnleft{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 50px;
+        
+    }
+    .About .Aboutcontent .columnright{
+        flex: 100%;
+    }
+    .About .Aboutcontent .columnleft{
+        width: 100%;
+    }
+    .About .Aboutcontent .columnright{
+        width: 100%;
+    }
+    .services .title::after{
+        content: "What i provide";
+        font-size: 12px;
+    }
+    .services .servicescontent .card{
+       width: 100%;
+      
+    }
+    .gallery .gallerycontent .column1{
+        width: 100%;
+        padding-top: -10px;
+        padding-bottom: 10px;
+    }
+    .gallery .gallerycontent .column2{
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .gallery .gallerycontent .column3{
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .perks .perkscontent .column1{
+        width: 100%;
+        padding: 10px;
+    }
+    .perks .perkscontent .column2{
+        width: 100%;
+        padding: 10px;
+    }
+    .perks .perkscontent .column3{
+        width: 100%;
+        padding: 10px;
+    }
+    .perks .perkscontent .column4{
+        width: 100%;
+        padding: 10px;
+    }
+    
+}
