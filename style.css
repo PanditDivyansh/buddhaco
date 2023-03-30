@@ -147,7 +147,7 @@ section .title::after{
     transform: translateX(-50%);
 }
 .About .title::after{
-    content: "Who i am";
+    content: "Our Captain";
 }
 .About .Aboutcontent ,.services .servicescontent ,.gallery .gallerycontent ,.perks .perkscontent , .contact .contactcontent{
     display: flex;
@@ -203,7 +203,7 @@ section .title::after{
 }
 .services .title::after{
     background: black;
-    content: "What i provide";
+    content: "What we provide";
 }
 .services .servicescontent .card{
     width: Calc(33% - 20px);
@@ -252,7 +252,7 @@ section .title::after{
 }
 
 .gallery .title::after{
-    content: "My works";
+    content: "Our works";
     background: #222;
     font-size: 15px;
 }
@@ -548,5 +548,36 @@ section .title::after{
         width: 100%;
         padding: 10px;
     }
-    
+    .fields {
+        
+    }
+
+    #contact .right{
+        visibility: hidden;
+    }
+
+    #contact {
+        
+        margin: auto;
+    }
+
+    /* #contact {
+
+    }
+    #contact .info{
+        
+        margin-top: 15px;
+    } */
+
+    #contact .left{
+        width: 100%;
+        text-align: left;
+        
+    }
+    #contact .maxwidth{
+    }
+}
+
+.contact{
+    display: flex;
 }
